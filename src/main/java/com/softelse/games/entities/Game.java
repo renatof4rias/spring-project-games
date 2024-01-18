@@ -31,7 +31,6 @@ public class Game implements Serializable{
 	@JoinColumn(name = "genre_id")
 	private Genre genre;
 	
-	
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
 	
@@ -40,7 +39,6 @@ public class Game implements Serializable{
 	}
 	
 	public Game(Long id, String title, Platform platform) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.platform = platform;

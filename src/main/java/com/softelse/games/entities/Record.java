@@ -33,7 +33,6 @@ public class Record implements Serializable{
 	}
 	
 	public Record(Long id, Instant moment, String name, Integer age) {
-		super();
 		this.id = id;
 		this.moment = moment;
 		this.name = name;
